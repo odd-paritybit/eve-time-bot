@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Paritybot-b8d18359-d19c-46e1-a2bb-676b834c9b31</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.3.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="NetCord" Version="1.0.0-alpha.355" />
+    <PackageReference Include="NetCord.Hosting" Version="1.0.0-alpha.355" />
+    <PackageReference Include="NetCord.Hosting.AspNetCore" Version="1.0.0-alpha.355" />
+    <PackageReference Include="NetCord.Hosting.Services" Version="1.0.0-alpha.355" />
+    <PackageReference Include="NetCord.Services" Version="1.0.0-alpha.355" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoordinatedTimeBot.Data.LiteDb\CoordinatedTimeBot.Data.LiteDb.csproj" />
+  </ItemGroup>
+</Project>

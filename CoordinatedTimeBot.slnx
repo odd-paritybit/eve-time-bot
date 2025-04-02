@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Solution Items/" Id="02ea681e-c7d8-13c7-8484-4ac65e1b71e8">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="CoordinatedTimeBot.Data.Abstractions/CoordinatedTimeBot.Data.Abstractions.csproj" Id="1b67d9ba-2e6f-c4a2-6bd1-81ee4d9c4c44" />
+  <Project Path="CoordinatedTimeBot.Data.LiteDb/CoordinatedTimeBot.Data.LiteDb.csproj" Id="fa84c227-d58f-177c-8312-be5c12743697" />
+  <Project Path="CoordinatedTimeBot.Host/CoordinatedTimeBot.Host.csproj" Id="ce862d17-7136-093f-db6c-fb4de7fd09b0" />
+</Solution>

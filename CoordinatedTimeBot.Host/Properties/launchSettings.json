@@ -1,0 +1,30 @@
+{
+  "profiles": {
+    "CoordinatedTimeBot.Host": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "environmentVariables": {
+        "ASPNETCORE_HTTP_PORTS": "8080"
+      },
+      "publishAllPorts": true,
+      "useSSL": false
+    },
+	"http": {
+	  "commandName": "Project",
+	  "environmentVariables": {
+		"ASPNETCORE_ENVIRONMENT": "Development"
+	  },
+	  "dotnetRunMessages": true,
+	  "applicationUrl": "http://localhost:8080"
+	},
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json"
+}
