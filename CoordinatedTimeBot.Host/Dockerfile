@@ -12,6 +12,8 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["CoordinatedTimeBot.Host/CoordinatedTimeBot.Host.csproj", "CoordinatedTimeBot.Host/"]
+COPY ["CoordinatedTimeBot.Data.LiteDb/CoordinatedTimeBot.Data.LiteDb.csproj", "CoordinatedTimeBot.Data.LiteDb/"]
+COPY ["CoordinatedTimeBot.Data.Abstractions/CoordinatedTimeBot.Data.Abstractions.csproj", "CoordinatedTimeBot.Data.Abstractions/"]
 RUN dotnet restore "./CoordinatedTimeBot.Host/CoordinatedTimeBot.Host.csproj"
 COPY . .
 WORKDIR "/src/CoordinatedTimeBot.Host"

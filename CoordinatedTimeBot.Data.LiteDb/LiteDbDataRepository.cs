@@ -16,7 +16,6 @@ public class LiteDbDataRepository : IDataRepository
 		_logger = logger;
 		_dataPath = Path.Combine(
 			Environment.CurrentDirectory,
-			configuration["DataStorage:DbFilePath"] ?? "app",
 			configuration["DataStorage:DbFileName"] ?? "Ctb.db");
 	}
 
