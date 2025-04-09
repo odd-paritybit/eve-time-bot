@@ -84,7 +84,8 @@ public class CreateEventModule : ApplicationCommandModule<ApplicationCommandCont
 		var callback = (success, output) switch
 		{
 			(true, CommandOutputKind.Channel) => InteractionCallback.Message(new InteractionMessageProperties()
-					.WithContent(message.ToContentString())),
+					.WithContent(message.ToContentString())
+					.WithAllowedMentions(AllowedMentionsProperties.All)),
 			(true, CommandOutputKind.Ephemeral) => InteractionCallback.Message(new InteractionMessageProperties()
 					.WithContent(message.ToContentString())
 					.WithFlags(MessageFlags.Ephemeral)),
